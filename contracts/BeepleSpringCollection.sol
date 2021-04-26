@@ -977,9 +977,9 @@ contract BeepleSpringCollection is ERC721Full {
         // edition of #100, as $1 drawing - 4
         // edition of #100, in the "leaderboard" style - 1
         // edition of #1, auction - 5
-        // edition of #3, silent auction - 2 
-        // In total, we have 12 Nifty Types. 
-        // 5 (100/100) + 5 (1/1) + 2 (3/3) = 12 
+        // edition of #3, silent auction - 2
+        // In total, we have 12 Nifty Types.
+        // 5 (100/100) + 5 (1/1) + 2 (3/3) = 12
        _numNiftyPermitted[1] = 100;
        _numNiftyPermitted[2] = 100;
        _numNiftyPermitted[3] = 100;
