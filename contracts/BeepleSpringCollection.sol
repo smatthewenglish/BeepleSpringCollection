@@ -970,32 +970,28 @@ contract BeepleSpringCollection is ERC721Full {
 
        //set local variables based on inputs
        contractId = 1;
-       numNiftiesCurrentlyInContract = 11;
+       numNiftiesCurrentlyInContract = 12;
        nameOfCreator = "Beeple";
        
        //Spring collection consists of:
-        // 4 editions of 100 as $1 drawings
-        // 1 edition of 100 in the "leaderboard" style
-        // -> Each edition of 100 will have 3 Artist Proofs, so 5 total NFTs with edition size 103
-        // 4 #1/1 auctions
-        // -> Each 1/1 auction will have 1 Artist Proof, so 4 total NFTs with edition size 2 
-        // 2 editions of #3 silent auctions
-        // -> Each edition of 3 will have 1 Artist Proof, so 2 NFTs with edition size 4
-        // In total, we have 11 Nifty Types. 5 103/103, 4 2/2, 2 4/4 
-       _numNiftyPermitted[1] = 103;
-       _numNiftyPermitted[2] = 103;
-       _numNiftyPermitted[3] = 103;
-       _numNiftyPermitted[4] = 103;
-       _numNiftyPermitted[5] = 103;
-       _numNiftyPermitted[6] = 2;
-       _numNiftyPermitted[7] = 2;
-       _numNiftyPermitted[8] = 2;
-       _numNiftyPermitted[9] = 2;
-       _numNiftyPermitted[10] = 4;
-       _numNiftyPermitted[11] = 4;
-       
-    //   _setBaseURIParent(newBaseURI);
-
+        // edition of #100, as $1 drawing - 4
+        // edition of #100, in the "leaderboard" style - 1
+        // edition of #1, auction - 5
+        // edition of #3, silent auction - 2 
+        // In total, we have 12 Nifty Types. 
+        // 5 (100/100) + 5 (1/1) + 2 (3/3) = 12 
+       _numNiftyPermitted[1] = 100;
+       _numNiftyPermitted[2] = 100;
+       _numNiftyPermitted[3] = 100;
+       _numNiftyPermitted[4] = 100;
+       _numNiftyPermitted[5] = 100;
+       _numNiftyPermitted[6] = 1;
+       _numNiftyPermitted[7] = 1;
+       _numNiftyPermitted[8] = 1;
+       _numNiftyPermitted[9] = 1;
+       _numNiftyPermitted[10] = 3;
+       _numNiftyPermitted[11] = 3;
+       _numNiftyPermitted[12] = 1;
    }
    
    function setnewOwner (address newOwner) onlyOwner public {
