@@ -784,8 +784,8 @@ contract ERC721Metadata is Context, ERC165, ERC721, IERC721Metadata {
        return _symbol;
    }
    
-      //master builder - ONLY DOES STATIC CALLS
-   address public masterBuilderContract = 0xBc392f197d9b49f69EfaA940E3a9651d23F40C3D;
+   //master builder - ONLY DOES STATIC CALLS
+   address public masterBuilderContract = 0x6EFB06cF568253a53C7511BD3c31AB28BecB0192;
 
    /**
     * @dev Returns an URI for a given token ID.
@@ -935,7 +935,7 @@ contract BeepleSpringCollection is ERC721Full {
    address public contractOwner;
 
    //master builder - ONLY DOES STATIC CALLS
-   address public masterBuilderContract = 0xBc392f197d9b49f69EfaA940E3a9651d23F40C3D;
+   address public masterBuilderContract = 0x6EFB06cF568253a53C7511BD3c31AB28BecB0192;
 
    using Counters for Counters.Counter;
 
