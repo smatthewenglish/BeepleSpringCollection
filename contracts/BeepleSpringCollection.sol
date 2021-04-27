@@ -1,11 +1,3 @@
-/**
- *Submitted for verification at Etherscan.io on 2021-04-26
-*/
-
-/**
- *Submitted for verification at Etherscan.io on 2020-12-11
-*/
-
 pragma solidity ^0.5.0;
 
 /*
@@ -989,9 +981,9 @@ contract BeepleSpringCollection is ERC721Full {
        _numNiftyPermitted[7] = 1;
        _numNiftyPermitted[8] = 1;
        _numNiftyPermitted[9] = 1;
-       _numNiftyPermitted[10] = 3;
+       _numNiftyPermitted[10] = 1;
        _numNiftyPermitted[11] = 3;
-       _numNiftyPermitted[12] = 1;
+       _numNiftyPermitted[12] = 3;
    }
    
    function setnewOwner (address newOwner) onlyOwner public {
